@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 3rem auto;
+}
+
+.invitation {
+    color: #53d3e4;
+    /* Màu chữ trên hình nền */
+    text-align: center;
+}
+
+.img-background {
+    width: 50%;
+    height: 30rem;
+    position: relative;
+    border-radius: 5px;
+}
+
+.invitation-info {
+    position: absolute;
+    left: 36%;
+    top: 28%;
+    width: 24%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: slideIn 2s forwards;
+}
+
+.invitation h1 {
+    font-size: 30px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    color: #53d3e4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.name-guest {
+    color: #14c3da;
+    font-weight: 600;
+}
+
+.invitation-info .content p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    margin: 10px 0;
+    color: #333;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-150%) translateX(-150%);
+    }
+
+    to {
+        transform: translateY(0%) translateX(0%);
+    }
+}
